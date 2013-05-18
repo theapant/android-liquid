@@ -32,7 +32,7 @@ Repositories:
 
 Before you continue --> run this in the terminal
 
-    repo init -u git://github.com/theapant/android-pac.git -b jb2
+    repo init -u git://github.com/theapant/android-liquid.git -b jb2
 
     repo sync
 
