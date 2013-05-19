@@ -28,6 +28,12 @@
   <remote  name="hydra"
            fetch="git://github.com/Team-Hydra/" />
 
+  <remote  name="ev"
+           fetch="git://github.com/Evervolv/" />
+
+  <remote  name="cr"
+           fetch="git://github.com/CarbonDev/" />
+
   <default revision="refs/tags/android-4.2.2_r1.1"
            remote="aosp"
            sync-c="true"
@@ -49,7 +55,7 @@
   <project path="device/htc/ville" name="android_device_htc_ville" remote="ls" revision="jb2" />
   <project path="device/htc/m7" name="android_device_htc_m7" remote="ls" revision="jb2" />
   <project path="device/htc/glacier" name="android_device_htc_glacier" remote="theapant" revision="liquid" />
-  <project path="device/htc/msm7x30-common" name="android_device_htc_msm7x30-common" remote="hydra" revision="cm-10.1" />
+  <project path="device/htc/msm7x30-common" name="android_device_htc_msm7x30-common" remote="ev" revision="jellybean" />
   <project path="device/htc/m7-common" name="android_device_htc_m7-common" remote="ls" revision="jb2" />
   <project path="device/htc/msm8960-common" name="android_device_htc_msm8960-common" remote="ls" revision="jb2" />
   <project path="device/lge/mako" name="android_device_lge_mako" remote="ls" revision="jb2" />
@@ -245,7 +251,6 @@
   <project path="external/yaffs2" name="android_external_yaffs2" remote="ls" revision="jb2" />
   <project path="external/zlib" name="android_external_zlib" remote="cm" revision="cm-10.1" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="kernel/htc/msm7x30" name="android_kernel_htc_msm7x30-3.0" remote="hydra" revision="cm-10.1" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ls" revision="jb2" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ls" revision="jb2" />
   <project path="frameworks/compile/libbcc" name="android_frameworks_compile_libbcc" remote="cmdev" revision="cm-10.1-linaro" />
@@ -273,31 +278,34 @@
   <project path="gdk" name="platform/gdk" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cm" revision="cm-10.1" />
   <project path="hardware/invensense" name="android_hardware_invensense" remote="cm" revision="cm-10.1" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cm" revision="cm-10.1" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cm" revision="cm-10.1" />
-  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cm" revision="cm-10.1" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ev" revision="jellybean" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="ev" revision="jellybean" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="ev" revision="jellybean" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="cm" revision="cm-10.1" />
+  <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="jellybean"/>
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="ls" revision="jb2" />
-  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="ls" revision="jb2" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="cm-10.1" />
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="cr" revision="cm-10.1" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="ev" revision="jellybean" />
+  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="jellybean" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="ev" revision="jellybean" />
+  <project path="hardware/qcom/gps-legacy" name="android_hardware_qcom_gps-legacy" remote="ev" revision="jellybean"/>
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="ls" revision="jb2" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="ev" revision="jellybean" />
+  <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media-legacy" remote="ev" revision="jellybean"/>
   <project path="hardware/qcom/msm8960" name="android_hardware_qcom_msm8960" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/sensors" name="android_hardware_qcom_sensors" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media-legacy" remote="hydra" revision="cm-10.1" />
-  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="hydra" revision="cm-10.1" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="cm" revision="cm-10.1" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="ev" revision="jellybean" />
   <project path="hardware/samsung_slsi/exynos5" name="android_hardware_samsung_slsi_exynos5" remote="cm" revision="cm-10.1" />
   <project path="hardware/samsung" name="android_hardware_samsung" remote="cm" revision="cm-10.1" />
   <project path="hardware/ti/omap3" name="android_hardware_ti_omap3" remote="cm" revision="cm-10.1" />
-  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="cmdev" revision="cm-10.1-linaro" />
+  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="cr" revision="jb2" />
   <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="cm" revision="cm-10.1" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="cm" revision="cm-10.1" />
+  <project path="kernel/htc/msm7x30" name="android_kernel_htc_msm7x30-3.0" remote="ev" revision="jellybean" />
   <project path="libcore" name="android_libcore" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
@@ -387,7 +395,7 @@
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="tm" revision="cm-10.1" />
   <project path="vendor/broadcom" name="proprietary_vendor_broadcom" remote="tm" revision="cm-10.1" />
   <project path="vendor/elan" name="proprietary_vendor_elan" remote="tm" revision="cm-10.1" />
-  <project path="vendor/htc" name="android_vendor_htc" remote="hydra" revision="cm-10.1" />
+  <project path="vendor/htc" name="android_vendor_htc" remote="ev" revision="jellybean" />
   <project path="vendor/imgtec" name="proprietary_vendor_imgtec" remote="tm" revision="cm-10.1" />
   <project path="vendor/invensense" name="proprietary_vendor_invensense" remote="tm" revision="cm-10.1" />
   <project path="vendor/liquid" name="android_vendor_liquid" remote="ls" revision="jb2" />
